@@ -6,11 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il Mio Portfolio Professionale</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; }
-        header { border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 30px; }
-        .project { background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #007bff; }
-        h1, h2 { color: #0056b3; }
-    </style>
+    /* Importiamo un font moderno da Google */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    body { 
+        font-family: 'Inter', sans-serif; 
+        line-height: 1.8; 
+        color: #2d3436; 
+        background-color: #f4f7f6; /* Sfondo leggermente grigio per riposare gli occhi */
+        margin: 0; padding: 40px 20px;
+    }
+
+    .container { max-width: 750px; margin: auto; }
+
+    header { text-align: center; margin-bottom: 60px; }
+
+    /* L'effetto "Card" per i progetti */
+    .project { 
+        background: white; 
+        padding: 30px; 
+        border-radius: 12px; 
+        margin-bottom: 30px; 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Ombra leggera */
+        transition: transform 0.3s ease; /* Animazione fluida */
+    }
+
+    /* Effetto al passaggio del mouse */
+    .project:hover { 
+        transform: translateY(-5px); 
+        border-left: 6px solid #0984e3; 
+    }
+
+    h1 { font-size: 2.5rem; letter-spacing: -1px; }
+    .tag { background: #dfe6e9; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; }
+</style>
 </head>
 <body>
 
